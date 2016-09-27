@@ -19,10 +19,6 @@ angular.module('workshop').config([
             templateUrl: '/views/categories-home.html',
             controller: 'HomeCategoriesCtrl'
           },
-          'table@categories': {
-            templateUrl: '/views/partials/_table-data.html',
-            controller: 'TableCategoriesCtrl'
-          },
           'modal@categories': {
             templateUrl: '/views/partials/_modal-product-data.html',
             controller: 'TableCategoriesCtrl'
