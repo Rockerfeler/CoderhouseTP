@@ -21,7 +21,7 @@ angular.module('workshop').controller('TableCategoriesCtrl', [
     $scope.modal = function(id) {
       var promise = ProductoService.getProducto(id);
       promise.then(function(response) {
-        $scope.producto = response;
+        $scope.producto = response.data;
       });
     };
 
