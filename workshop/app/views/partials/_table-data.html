@@ -20,7 +20,7 @@
       <td>{{articulo.available_quantity}}</td>
       <td>{{articulo.condition == "new" ? "Nuevo" : "Usado"}}</td>
       <td nowrap="true">
-        <a ng-click="modal('{{articulo.id}}')" class="btn btn-success btn-sm" data-toggle="modal" data-target="#productModal">
+        <a ng-click="modal(articulo.id)" class="btn btn-success btn-sm" data-toggle="modal" data-target="#productModal">
           <i class="glyphicon glyphicon-eye-open"></i>
         </a>
         <a ng-href="{{articulo.permalink}}" class="btn btn-primary btn-sm" target="_blank">

@@ -19,11 +19,11 @@ angular.module('workshop').controller('TableCategoriesCtrl', [
     });
 
     $scope.modal = function(id) {
-
-                      var respuesta = ProductoService(id, $http, $q);
-
-                      $log.debug(rspuesta);
-                  };
+      var promise = ProductoService.getProducto(id);
+      promise.then(function(response) {
+        $scope.producto = response;
+      });
+    };
 
 
 
